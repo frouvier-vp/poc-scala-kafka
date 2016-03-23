@@ -1,0 +1,16 @@
+<configuration debug="false">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-4relative|-%-4level in %logger{60} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <logger name="ch.qos.logback" level="INFO" />
+    <logger name="com.fredrouvier" level="INFO" />
+
+</configuration>
